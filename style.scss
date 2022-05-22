@@ -1,0 +1,77 @@
+@mixin flex(
+  $justifyContent,
+  $alignItems,
+  $flexWrap: "nowrap",
+  $flexDirection: "row"
+) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+  flex-wrap: $flexWrap;
+}
+
+body {
+  @include flex(start, center, nowrap, column);
+}
+
+.row {
+  @include flex(space-between, center);
+  width: 400px;
+
+  input {
+    height: 40px;
+    width: 250px;
+  }
+  .addTask-btn {
+    height: 40px;
+    width: 120px;
+    background-color: aquamarine;
+    @include flex(center, center);
+    cursor: pointer;
+  }
+}
+
+.viewTask {
+  height: 500px;
+  width: 500px;
+  margin-top: 50px;
+  border: 1px solid black;
+  overflow: scroll;
+
+  .card {
+    @include flex(space-between, center);
+    height: 50px;
+    padding: 15px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.17);
+    margin: 20px;
+
+    input {
+      border: none;
+      outline: none;
+    }
+
+    article {
+      @include flex(space-between, center);
+      .btn {
+        height: 40px;
+        width: 120px;
+        margin: 5px;
+        cursor: pointer;
+        padding: 10px;
+        box-sizing: border-box;
+        color: aliceblue;
+        font-weight: bold;
+        @include flex(center, center);
+      }
+      .edit-btn {
+        background-color: rgba(167, 167, 0, 0.737);
+      }
+
+      .delete-btn {
+        background-color: rgba(169, 0, 0, 0.761);
+      }
+    }
+  }
+}

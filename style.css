@@ -1,0 +1,145 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -ms-flex-wrap: "nowrap";
+      flex-wrap: "nowrap";
+  width: 400px;
+}
+.row input {
+  height: 40px;
+  width: 250px;
+}
+.row .addTask-btn {
+  height: 40px;
+  width: 120px;
+  background-color: aquamarine;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -ms-flex-wrap: "nowrap";
+      flex-wrap: "nowrap";
+  cursor: pointer;
+}
+
+.viewTask {
+  height: 500px;
+  width: 500px;
+  margin-top: 50px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+.viewTask .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -ms-flex-wrap: "nowrap";
+      flex-wrap: "nowrap";
+  height: 50px;
+  padding: 15px;
+  background-color: aliceblue;
+  -webkit-box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.17);
+          box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.17);
+  margin: 20px;
+}
+.viewTask .card input {
+  border: none;
+  outline: none;
+}
+.viewTask .card article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -ms-flex-wrap: "nowrap";
+      flex-wrap: "nowrap";
+}
+.viewTask .card article .btn {
+  height: 40px;
+  width: 120px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: aliceblue;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -ms-flex-wrap: "nowrap";
+      flex-wrap: "nowrap";
+}
+.viewTask .card article .edit-btn {
+  background-color: rgba(167, 167, 0, 0.737);
+}
+.viewTask .card article .delete-btn {
+  background-color: rgba(169, 0, 0, 0.761);
+}/*# sourceMappingURL=style.css.map */
